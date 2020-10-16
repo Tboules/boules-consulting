@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 160px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-image: linear-gradient(220deg, #b2c7c3e0, #7d9f98);
+  border-radius: 4px;
+  margin-bottom: 40px;
+
+  @keyframes colorChange {
+    from {
+      color: #e6fffc;
+    }
+    to {
+      color: #555555;
+    }
+  }
+
+  h2 {
+    position: relative;
+    z-index: 200;
+    padding: 20px;
+    font-size: 2rem;
+    font-family: "Sora", sans-serif;
+    font-weight: 500;
+    color: #e6fffc;
+    transition: 0.3s;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      height: 4px;
+      border-radius: 6px;
+      width: 100%;
+      background-color: #e6fffc;
+      transform: scale(0);
+      transition: transform 0.3s ease;
+    }
+  }
+  &:hover {
+    h2 {
+      color: #555555;
+    }
+    h2:after {
+      transform: scale(1);
+    }
+  }
+
+  p {
+    padding: 10px;
+    color: #dcfdfa;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+
+  img {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+  }
+}
