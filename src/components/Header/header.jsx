@@ -12,7 +12,7 @@ const Header = () => {
     if (!drawerToggle) {
       setDrawerToggle(true)
       setNav({
-        transform: "translateX(0%)",
+        transform: "translateY(0%)",
         transition: "transform .5s ease-in-out",
       })
     } else {

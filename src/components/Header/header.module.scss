@@ -88,12 +88,12 @@ body {
     position: absolute;
     right: 0;
     top: 110px;
-    height: calc(100vh - 110px);
-    width: 60vw;
+    height: calc(50vh - 110px);
+    width: 100vw;
     background-color: #f4f4f4;
-    z-index: 20;
-    transform: translateX(100%);
-    overflow-x: hidden;
+    z-index: 0;
+    transform: translateY(-150%);
+    overflow-y: hidden;
 
     .nav-list {
       height: 80%;
