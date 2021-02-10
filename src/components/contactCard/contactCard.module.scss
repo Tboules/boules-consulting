@@ -72,13 +72,8 @@
   }
 
   img {
-    width: 400px;
-    height: 400px;
+    width: 330px;
+    height: 330px;
     background-color: white;
-
-    @media only screen and (max-width: 600px) {
-      width: 330px;
-      height: 330px;
-    }
   }
 }
